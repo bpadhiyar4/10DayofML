@@ -31,7 +31,6 @@ plt.xticks(rotation=90)
 plt.ylabel('NO. of confirmed cases')
 plt.bar(xCountry, yCountry, color='red')
 plt.show()
-
 # Date Wise Ploting.
 
 curData.loc['total'] = curData.sum(axis=0)
@@ -45,5 +44,5 @@ plt.xlabel('Date',fontsize=16)
 plt.xticks(rotation=90)
 plt.ylabel('NO. of confirmed cases')
 
-plt.plot(xDate,yDate, color='red')
+plt.plot(xDate,yDate, '-or')
 plt.show()
